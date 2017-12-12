@@ -1,0 +1,39 @@
+
+
+###################################################################################################################
+###################################################################################################################
+########################### ANNOTATION WITH PROKKA
+###################################################################################################################
+
+# Fast annotation of prokaryotic genomes
+# used by Vital-it
+
+
+
+
+
+~/software/prokka-1.12/prokka/bin/prokka --outdir Annotation_ --prefix CIP70.10_PROKKA CIP70.10_GCF_001457535.1_chrom.fna
+
+
+[software]  [outdir with strain name]  [prefix of files] [genome in fasta]
+
+
+
+
+assemble all contigs in one file. then chang sequences names for more easy to read
+
+Vibrio_cholerae_A1552_ch1
+
+~/software/prokka-1.12/prokka/bin/prokka --outdir Annotation_VC-SP6G --genus Vibrio --species cholerae --strain SP6G --locustag VC-SP6G --prefix VC-SP6G_Prokka --rfam --usegenus VC-SP6G_pacbio.fasta
+
+
+
+
+
+
+
+
+
+
+
+###################################################################################################################
