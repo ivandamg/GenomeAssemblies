@@ -9,7 +9,10 @@
 # used by Vital-it
 
 
+## IN LOOP
+for i in $(ls *.fna); do echo $i;  ~/software/prokka-1.12/prokka/bin/prokka --outdir Annotation_$(echo $i | cut -d'_' -f3) --genus $(echo $i | cut -d'_' -f1) --species $(echo $i | cut -d'_' -f2) --strain $(echo $i | cut -d'_' -f3) --locustag Csp_$(echo $i | cut -d'_' -f3) --prefix $(echo $i | cut -d'_' -f1,2,3)_Prokka --rfam --usegenus $i  ;  done
 
+###################
 
 
 ~/software/prokka-1.12/prokka/bin/prokka --outdir Annotation_ --prefix CIP70.10_PROKKA CIP70.10_GCF_001457535.1_chrom.fna
